@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu Consulta! - TapCard Rosario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 4rem 3rem;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.6s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            animation: bounce 1s ease infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            color: #2563eb;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .message {
+            color: #4a5568;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-box h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            color: #4a5568;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .social-links p {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            color: #d4af37;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 3rem 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .message {
+                font-size: 1rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+
+        <h1>¡Consulta Recibida!</h1>
+
+        <p class="message">
+            Gracias por contactarte con <strong>TapCard Rosario</strong>.
+            Recibimos tu consulta y te responderemos a la brevedad.
+        </p>
+
+        <div class="info-box">
+            <h3>⏰ Tiempo de Respuesta</h3>
+            <p>Te contactaremos en menos de <strong>24 horas</strong> por email o WhatsApp.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>📱 ¿Necesitás respuesta inmediata?</h3>
+            <p>Escribinos directamente por WhatsApp y te respondemos al instante.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+            <a href="https://wa.me/5493413245783?text=Hola!%20Acabo%20de%20enviar%20el%20formulario%20y%20necesito%20una%20respuesta%20rápida"
+                class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                Escribir por WhatsApp
+            </a>
+        </div>
+
+        <div class="social-links">
+            <p>Seguinos en redes sociales:</p>
+            <p>
+                📸 Instagram: <a href="https://instagram.com/tapcard.rosario" target="_blank"
+                    rel="noopener noreferrer">@tapcard.rosario</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Animación al cargar
+        window.addEventListener('load', () => {
+            document.querySelector('.container').style.opacity = '1';
+        });
+
+        // Confetti effect (opcional)
+        function createConfetti() {
+            const colors = ['#2563eb', '#d4af37', '#10b981', '#f59e0b'];
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.style.cssText = `
+                        position: fixed;
+                        width: 10px;
+                        height: 10px;
+                        background: ${colors[Math.floor(Math.random() * colors.length)]};
+                        top: -10px;
+                        left: ${Math.random() * 100}%;
+                        animation: fall ${2 + Math.random() * 2}s linear;
+                        pointer-events: none;
+                    `;
+                    document.body.appendChild(confetti);
+                    setTimeout(() => confetti.remove(), 4000);
+                }, i * 30);
+            }
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Ejecutar confetti al cargar (comentar si no querés)
+        // createConfetti();
+    </script>
+</body>
+
+</html>
