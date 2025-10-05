@@ -472,8 +472,16 @@ if (performance && performance.timing) {
     }, 0);
   });
 }
+// Banner Promocional
+function closeBanner() {
+  const banner = document.getElementById("promoBanner");
+  if (banner) {
+    banner.style.animation = "none";
+    banner.style.transform = "translateY(-100%)";
+    banner.style.transition = "transform 0.3s ease";
 
-// ==========================================
-// EXPORTAR FUNCIONES (Si usas módulos)
-// ==========================================
-// export { trackEvent, copyToClipboard, animateCounter };
+    setTimeout(() => {
+      banner.classList.add("hidden");
+    }, 300);
+  }
+}
