@@ -4,6 +4,7 @@ Landing page premium para TapCard, tarjetas NFC personalizadas de lujo para netw
 
 ## Descripción
 
+
 Sitio web moderno y elegante desarrollado para promocionar TapCard, tarjetas de presentación digitales con tecnología NFC. Diseño premium en negro y dorado que refleja la calidad del producto.
 
 ## Características
